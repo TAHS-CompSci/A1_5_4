@@ -96,11 +96,19 @@ for item in items:
 
   
 #Money Portion
+<<<<<<< HEAD
 subtotal = Label(root3,text = 'Subtotal  $'+str(sub))
 subtotal.grid(row = 1,column = 3)
 tax = Label(root3,text = 'Total Tax  $'+str(taxr))
 tax.grid(row = 2,column = 3)
 total = Label(root3,text = 'Total  $'+str(taxr + sub))
+=======
+subtotal = Label(root,text = 'Subtotal  $0.00')
+subtotal.grid(row = 1,column = 3)
+tax = Label(root,text = 'Total Tax  $0.00')
+tax.grid(row = 2,column = 3)
+total = Label(root,text = 'Total  $0.00')
+>>>>>>> 39f6cb1ec23db4988b6e98f5b342f2a51ab0dbc7
 total.grid(row = 3,column = 3)
 
 
