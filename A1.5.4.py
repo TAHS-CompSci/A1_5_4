@@ -92,11 +92,11 @@ for item in items:
 
   
 #Money Portion
-subtotal = Label(root,text = 'Subtotal  $'+str(sub))
+subtotal = Label(root,text = 'Subtotal  $0.00')
 subtotal.grid(row = 1,column = 3)
-tax = Label(root,text = 'Total Tax  $'+str(taxr))
+tax = Label(root,text = 'Total Tax  $0.00')
 tax.grid(row = 2,column = 3)
-total = Label(root,text = 'Total  $'+str(taxr + sub))
+total = Label(root,text = 'Total  $0.00')
 total.grid(row = 3,column = 3)
 
 
