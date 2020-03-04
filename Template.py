@@ -30,6 +30,7 @@ class Substance():
     total.config(text='Total  ${}'.format(totalAm))
 
 
+
 #Functions
 def delete():
   """
@@ -42,7 +43,7 @@ def delete():
   food = food[0:len(food)-11]
   if lb.index(item) % 2 == 1:
     lb.delete(item)
-    lb.insert(item,'')
+    lb.insert(item,'Removed')
     for item in items:
       for x,y in item.items():
         if x == food:
@@ -65,22 +66,22 @@ categ = ['Food','Bevarage','Candy'] # Categories
 r = 0 # row
 c = 0 # column
 sub = 0.00 # subtotal money
-taxr = 0.04 # tax rate 4 %
+taxr = 0.06 # tax rate 6 %
 items = [{'Hot Dogs':'2.00','Pretel':'1.00','Nachos':'3.00','Pickle': '1.00','Pizza':'2.00'},{'Pepsi':'1.00','Sprite':'1.00','Root Beer':'1.00'},{'Butterfinger':'1.00','Laffy_Taffy':'0.98','Heath':'1.00'}]
 
-
-#other misc items
-delButt = Button(text = 'Remove Selected', command = delete)
-delButt.grid(row=5,column = 3)
-
-#label telling you to click to select
-Clicklabel = Label(text='Click To Select')
-Clicklabel.grid(row=4,column= 3)
+#canvas
+canvas = Canvas(root, height=600, width=600, relief=RAISED, bg='white')
+canvas.grid(row=6, column=0,columnspan=3)
 
 #Receipt
-lb = Listbox(root) 
+root3= tk.Tk()
+lb = Listbox(root3) 
 lb.insert(END,'    -Concession Stand-')
-lb.grid(row = 6,column = 3,columnspan = 2)
+lb.grid(row = 6,column = 4,columnspan = 3)
+
+#other misc items
+delButt = Button(root3,text = 'Remove Selected', command = delete)
+delButt.grid(row=5,column = 4)
 
 #Categories
 for item in items:
@@ -95,16 +96,16 @@ for item in items:
 
   
 #Money Portion
-subtotal = Label(root,text = 'Subtotal  $0.00')
+subtotal = Label(root3,text = 'Subtotal  $0.00')
 subtotal.grid(row = 1,column = 3)
-tax = Label(root,text = 'Total Tax  $0.00')
+tax = Label(root3,text = 'Total Tax  $0.00')
 tax.grid(row = 2,column = 3)
-total = Label(root,text = 'Total  $0.00')
+total = Label(root3,text = 'Total  $0.00')
 total.grid(row = 3,column = 3)
 
 
 #menu
-menu = Menu(root) 
+menu = Menu(root3) 
 root.config(menu= menu) 
 helpmenu = Menu(menu) 
 menu.add_cascade(label='Help',menu = helpmenu)
