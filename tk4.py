@@ -108,3 +108,5 @@ tax = Label(root3,relief=RAISED,bg='light gray',text = 'Total Tax  $0.00')
 tax.grid(row = 3,column = 0)
 total = Label(root3,relief = RAISED,bg='light gray',text = 'Total  $0.00')
 total.grid(row = 4,column = 0)
+
+root.mainloop()
