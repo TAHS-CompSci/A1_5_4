@@ -66,7 +66,7 @@ categ = ['Food','Bevarage','Candy'] # Categories
 r = 0 # row
 c = 0 # column
 sub = 0.00 # subtotal money
-taxr = 0.04 # tax rate 4 %
+taxr = 0.06 # tax rate 6 %
 items = [{'Hot Dogs':'2.00','Pretel':'1.00','Nachos':'3.00','Pickle': '1.00','Pizza':'2.00'},{'Pepsi':'1.00','Sprite':'1.00','Root Beer':'1.00'},{'Butterfinger':'1.00','Laffy_Taffy':'0.98','Heath':'1.00'}]
 
 #canvas
