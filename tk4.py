@@ -62,10 +62,6 @@ def delete():
                     total.config(text='Total  ${}'.format(totalAm))
 
 
-def about():
-    tk.messagebox.showinfo('About','A Concession Stand for A1.5.4 in CSP')
-
-
 root = tk.Tk(className='Concession Stand')
 root.config(bg='salmon')
 
@@ -112,13 +108,3 @@ tax = Label(root3,relief=RAISED,bg='light gray',text = 'Total Tax  $0.00')
 tax.grid(row = 3,column = 0)
 total = Label(root3,relief = RAISED,bg='light gray',text = 'Total  $0.00')
 total.grid(row = 4,column = 0)
-
-
-#menu
-menu = Menu(root3) 
-root.config(menu= menu) 
-helpmenu = Menu(menu) 
-menu.add_cascade(label='Help',menu = helpmenu)
-helpmenu.add_command(label='About',command = about)
-helpmenu.add_command(label='Quit', command=root.quit) 
-root.mainloop()
