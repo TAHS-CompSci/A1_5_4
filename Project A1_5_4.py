@@ -21,7 +21,7 @@ food_stock = {'Hot Dogs': 75,
 'Hot Cheetos': 60,
 
 
-for key, value in food_stock.items():
+for key, value in food_stock:
     print (key)
     print (value)
     

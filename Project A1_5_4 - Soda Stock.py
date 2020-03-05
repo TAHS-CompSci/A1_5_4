@@ -16,3 +16,7 @@ soda_stock = {'pepsi': 67,'sprite':77,'root beer':89,'Mtn Dew':111,'Dr.pepper':6
 'Fanta Pineapple':41,
 'Water':112,
 'Lemonade':89}
+
+for key, value in soda_stock.items():
+    print (key)
+    print (value)
