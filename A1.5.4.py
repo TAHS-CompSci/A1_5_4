@@ -69,7 +69,10 @@ sub = 0.00 # subtotal money
 taxr = 0.06 # tax rate 6 %
 items = [{'Hot Dogs':'2.00','Pretel':'1.00','Nachos':'3.00','Pickle': '1.00','Pizza':'2.00'}]
 Soda=[{'Pepsi':'1.00','Sprite':'1.00','Root Beer':'1.00', 'Pepsi':'1.00','Sprite':'1.00', 'Root Bear':'1.00', 'Mtn. Dew':'1.00', 'Dr. pepper.':'1.00', 'Extra pibb':'2.00', 'Coca Cola.':'1.00', 'Fanta Orange':'2.00', 'Mellow Yellow':'2.00', 'Crush':'1.00', '7-Up':'1.00', 'Pepsi Wild Cherry':'2.00', 'Diet Coke':'1.50', 'Diet mtn dew':'1.50', 'Diet pepsi':'1.50', '7 up cherry':'2.00', 'A&W cream soda':'1.75', 'Sun Drop':'2.00', 'Squirt':'2.00', 'Jones Cane Sugar Soda - Blue Rhasberry':'3.00','Jones Cane Sugar Soda - Cherry':'3.00', 'Fanta Grape':'2.00', 'Crush Strawberry':'2.00', 'Fanta Pineapple':'2.00', 'Water':'0.75', 'Lemonade':'1.30'}]
-Candy=[{'Butterfinger':'1.00','Laffy_Taffy':'0.98','Heath':'1.00'}]
+Candy=[{'Butterfinger':'1.00','Laffy_Taffy':'0.98','Heath':'1.00', 'Hershey': '1.73', 'Skittles':'2.00', 'M&Ms' :'$2.00', 'Kit Kat' :'1.73',
+'Ring pop':'1.89','Push pop':'1.89','Snickers':'1.73','Milky Way':'1.54','Twix':'1.73','Almound Joy':'$1.78','3 Musketeers':'1.78',
+'Baby Ruth':'1.89','Mounds':'1.89','100 Grand Bar':'1.89','Crunch':	'1.73','Hersheys Cookies and Cream':'2.00','Payday':'1.89','Reeses Cups':'2.00','Little cup of ice cream':'$1.23',
+'Sour patch kids':'2.34','Gummy bears':	'2.15','Starburst':'2.15'}]
 
 #canvas
 canvas = Canvas(root, height=600, width=600, relief=RAISED, bg='white')
