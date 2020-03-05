@@ -1,25 +1,7 @@
 [{'Hershey': '1.73', 'Skittles':'2.00', 'M&Ms' :'$2.00', 'Kit Kat' :'1.73',
 'Ring pop':'1.89','Push pop':'1.89','Snickers':'1.73','Milky Way':'1.54','Twix':'1.73','Almound Joy':'$1.78','3 Musketeers':'1.78',
 'Baby Ruth':'1.89','Mounds':'1.89','100 Grand Bar':'1.89','Crunch':	'1.73','Hersheys Cookies and Cream':'2.00','Payday':'1.89','Reeses Cups':'2.00','Little cup of ice cream':'$1.23',
-'Sour patch kids':'2.34','Gummy bears':	'2.15','Starburst':'2.15'}
+'Sour patch kids':'2.34','Gummy bears':	'2.15','Starburst':'2.15'}]
 
-Popcorn	2.5
-Nachos	3.25
-Hot dogs	2.35
-Pickle	1.89
-Slice of pizza	2.23
-Lays chips Onion	
-Doritios	1.15
-Cool Ranch doritios	1.15
-Pringles ( Small can )	1.55
-Cheetos	1.23
-Funions	1.23
-Carmal Corn	2.15
-Salted Pretzle	2.23
-Cheddar Popcorn	1.89
-Fritos Chili	1.23
-Fritos Original	1.23
-Ruffles	1.89
-Sun Chips	1.23
-Hot Cheetos	1.53
-10 Pizza Rolls 	
+[{'Popcorn':'2.50','Nachos':'3.25','Hot dogs':'2.35','Pickle':'1.89','Slice of pizza':'2.23','Doritios':'1.15','Funions':'1.23','Carmal Corn':'2.15','Salted Pretzle':'2.23',
+'Fritos':'1.23','Sun Chips':'1.23','Hot Cheetos':'1.53','10 Pizza Rolls':'1.50'}]	
