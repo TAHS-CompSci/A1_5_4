@@ -20,7 +20,7 @@ food_stock = {'Hot Dogs': 75,   #This part of code deals with a list of the food
 'Sun Chips': 40,
 'Hot Cheetos': 60,}
 
-for key, value in food_stock: #This part of the code is to test to make sure the list works correctly. in which it does when this file was committed.
+for key, value in food_stock:
     print (key)
     print (value)
     

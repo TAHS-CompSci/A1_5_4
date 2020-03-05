@@ -1,5 +1,5 @@
 candy_stock = {
-'Butterfinger ': 70,
+'Butterfinger ': 72,
 'Hersheys': 70,
 'Laffy Taffy': 70,
 'Heath': 70,
