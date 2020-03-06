@@ -57,7 +57,6 @@ class Substance():
         """ 
         Create images on canvas
         """
-        print(shapes)
         img = canvas.create_image(random.randint(20,600),random.randint(20,600),image=self.photo)
         shapes.append(img)
         shapes.append('linebreak')
