@@ -1,3 +1,9 @@
+"""
+Tk4.py
+All teams
+GUI where you can select food for a customer
+"""
+'''Imports Tk'''
 import tkinter as tk
 from tkinter import *
 from tkinter import messagebox
@@ -9,6 +15,7 @@ class Window():
     Create Category Windows and call substance
     """
     def __init__(self,name,items,r,c):
+        '''Calls all items and puts them into items and rows'''
         self.root = tk.Tk(className = name)
         for key,value in items.items():
             thing = Substance(self.root,r,c,key,value)
@@ -26,6 +33,7 @@ class Substance():
     A class for defining all the buttons
     """
     def __init__(self,root,r,c,food, pay):
+        '''Create the title for the buttons'''
         self.food = food.title()
         self.pay = pay
         self.root = root
