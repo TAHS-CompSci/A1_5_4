@@ -9,8 +9,12 @@ ice cream shop gui
 from tkinter import * 
 
 root = Tk()
-root.geometry('300x300')
+root.geometry('500x500')
 
-c = Canvas(root, height=250, width=300)
+c = Canvas(root, height=400, width=500)
+
+b = Button(root, width = 20)
+b.pack()
+
 
 root.mainloop()
