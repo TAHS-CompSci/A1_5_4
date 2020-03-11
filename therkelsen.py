@@ -6,9 +6,9 @@ c = 0 # column
 
 root = tk.Tk()
 root.config(bg= 'light blue')
-canvas = Canvas(root, height =600, width = 600, relief = RAISED, bg = 'gray',bd = 13)
+canvas = Canvas(root, height =650, width = 600, relief = RAISED, bg = 'gray',bd = 13)
 canvas.grid(row = 2, column = 0, columnspan = 3 )
-
+canvas.create_polygon(300,650,350,500,250,500, fill='#b5651d')
 
 def poo(flavor):
     global coords
