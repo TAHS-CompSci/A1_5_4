@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import *
 
 root = tk.Tk(className = 'ice cream')
-root.config(bg = 'salmon',width = 800, height = 800)
+root.config(bg = 'salmon',width = 1000, height = 1000)
 
 def addShape(flavor):
 	global shapes
@@ -39,12 +39,12 @@ scoopDict = {'One Scoop':1,'Two Scoop':2,'Three Scoop':3}
 price = {'Vanilla': 1,'Strawberry': 2,'Chocolate': 2}
 coords = [300,560,500,430]	
 shapes = []
-c = Canvas(root, width = 800, height = 800, bg = 'tan', bd = 8, relief = GROOVE)
+c = Canvas(root, width = 800, height = 750, bg = 'tan', bd = 8, relief = GROOVE)
 c.grid(row = 2)
 ff = Frame(root)
-ff.grid()
+ff.grid(row = 1)
 sf = Frame(root)
-sf.grid(row = 1)
+sf.grid(row = 0)
 scoop = IntVar()
 scoop.set(1)
 col = 1
@@ -57,11 +57,11 @@ receipt.insert(END,'-'*30)
 receipt.insert(END, '')
 receipt.grid(row = 4, columnspan = 3)
 
-confirm = Button(root, activebackground = 'dark grey', bg = 'grey', bd = 6, relief = SUNKEN, text = 'Confirm', command = reset)
-confirm.grid(row = 5)
+confirm = Button(ff, activebackground = 'pink', bg = 'salmon', bd = 6, relief = SUNKEN, text = 'Place Order', command = reset)
+confirm.grid(row = 0, column = 4)
 
 van = Button(ff, activebackground = 'tan', fg = 'gray', bg = 'white', bd = 7, relief = RAISED, text = 'Vanilla', command = lambda: addShape('Vanilla'))
-van.grid(column = 0)
+van.grid(row = 0, column = 0)
 
 straw = Button(ff, activebackground = 'tan', fg = 'red', bg = 'pink', bd = 7, relief = RAISED, text = 'Strawberry', command = lambda: addShape('Strawberry'))
 straw.grid(row = 0, column = 1)
@@ -71,7 +71,7 @@ choc.grid(row = 0, column = 2)
 
 for x,y in scoopDict.items():
 	b = Radiobutton(sf, activebackground = 'dark grey', bg = 'gray', bd = 5, relief = SUNKEN, text = x, variable = scoop, value = y)
-	b.grid(row = 8,column = col)
+	b.grid(row = 0,column = col)
 	col += 1
 
 root.mainloop()
