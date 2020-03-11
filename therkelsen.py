@@ -6,11 +6,12 @@ c = 0 # column
 
 root = tk.Tk()
 root.config(bg= 'light blue')
-canvas = Canvas(root, height = 600, width = 600, relief = RAISED, bg = 'gray',bd = 13)
-canvas.grid(row = 7, column = 0, columnspan = 3 )
+canvas = Canvas(root, height = 300, width = 600, relief = RAISED, bg = 'gray',bd = 13)
+canvas.grid(row = 2, column = 0, columnspan = 3 )
+
 
 def poo():
-    pass
+    print ('have a good day you little shit')
 
 coco = Button(root, relief=RIDGE,bg='light gray', text='coco', command = poo)
 coco.grid(row=0,column=0)
