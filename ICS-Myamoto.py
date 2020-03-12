@@ -81,22 +81,23 @@ delButt = Button(text = 'Remove Selected', command = delete)
 delButt.grid(row=3,column = 3)
 
 
-
 #Receipt
 lb = Listbox(root) 
 lb.insert(END,'    -Ice Cream Shop-')
 lb.grid(row = 6,column = 3,columnspan = 2)
 
 #Categories
+intvar = 0
 for item in items:
-  categName = categ[items.index(item)]
-  categLabel = Label(text = categName )
-  categLabel.grid(row = r,column = c)
-  for key,value in item.items():
-    r += 1
-    thing = Substance(root,r,c,key,value)
-  r = 0
-  c += 1
+    categName = categ[intvar]
+    categLabel = Label(text = categName )
+    categLabel.grid(row = r,column = c)
+    for key,value in item.items():
+        r += 1
+        thing = Substance(root,r,c,key,value)
+    r = 0
+    c += 1
+    intvar += 1
 
   
 #Money Portion
