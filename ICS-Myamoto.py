@@ -1,3 +1,10 @@
+"""
+1.5.4 design a gui
+Miyamoto
+ice cream shop gui
+"""
+
+
 import tkinter as tk
 from tkinter import *
 from tkinter import messagebox
@@ -5,8 +12,8 @@ from tkinter import messagebox
 #Classes
 class Substance():
   """
-  A class for defining all the buttons
-  """
+  A class for defining all the buttons
+  """
   def __init__(self,root,r,c,food, pay):
     self.food = food
     self.pay = pay
@@ -19,14 +26,12 @@ class Substance():
     """
     global taxr
     global sub
-    lb.insert(END,'{}      ${}'.format(self.food,self.pay))
+    lb.insert(END,'{}      ${}'.format(self.food,self.pay))
     lb.insert(END,'-'*30) # Creates top of receipt
     lb.see(END)
-    sub = round(float(sub)+ float(self.pay),2)
-    taxAm = round(float(sub)*float(taxr),2)
-    totalAm=round(float(sub)+float(taxAm),2)
-    subtotal.config(text='Subtotal  ${}'.format(sub))
-    total.config(text='Total  ${}'.format(totalAm))
+    totalAm=round(float(self.pay),2)
+    subtotal.config(text='Subtotal  ${}'.format(sub))
+    total.config(text='Total  ${}'.format(totalAm))
 
 
 #Functions
@@ -46,10 +51,9 @@ def delete():
       for x,y in item.items():
         if x == food:
           sub = round(float(sub)-float(y),2)
-          taxAm= round(float(sub)*float(taxr),2)
           totalAm = round(float(sub)+float(taxAm),2)
-          subtotal.config(text='Subtotal  ${}'.format(sub))
-          total.config(text='Total  ${}'.format(totalAm))
+          subtotal.config(text='Subtotal  ${}'.format(sub))
+          total.config(text='Total  ${}'.format(totalAm))
 
 
 def about():
@@ -58,6 +62,7 @@ def about():
 
 root = tk.Tk()
 
+
 #variables
 categ = ['Strawberry','Chocolate','Vanilla'] # Categories
 r = 0 # row
@@ -65,14 +70,21 @@ c = 0 # column
 sub = 0.00 # subtotal money
 items = [{'1':'0.75','2':'1.50','3':'2.25'},{'1':'0.75','2':'1.50','3':'2.25'},{'1':'0.50','2':'1.00','3':'1.50'}]
 
+
+#canvas
+canvas = Canvas(root, height=600, width=600, bg='white')
+canvas.grid(row=7, column=0,columnspan=3)
+
+
 #other misc items
 delButt = Button(text = 'Remove Selected', command = delete)
-delButt.grid(row=5,column = 3)
+delButt.grid(row=3,column = 3)
+
 
 
 #Receipt
 lb = Listbox(root) 
-lb.insert(END,'    -Ice Cream Shop-')
+lb.insert(END,'    -Ice Cream Shop-')
 lb.grid(row = 6,column = 3,columnspan = 2)
 
 #Categories
@@ -88,9 +100,9 @@ for item in items:
 
   
 #Money Portion
-subtotal = Label(root,text = 'Subtotal  $'+str(sub))
+subtotal = Label(root,text = 'Subtotal  $'+str(sub))
 subtotal.grid(row = 1,column = 3)
-total = Label(root,text = 'Total  $'+str(sub))
+total = Label(root,text = 'Total  $'+str(sub))
 total.grid(row = 2,column = 3)
 
 
