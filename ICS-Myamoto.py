@@ -65,7 +65,6 @@ c = 0 # column
 sub = 0.00 # subtotal money
 items = [{'1':'0.75','2':'1.50','3':'2.25'},{'1':'0.75','2':'1.50','3':'2.25'},{'1':'0.50','2':'1.00','3':'1.50'}]
 
-
 #other misc items
 delButt = Button(text = 'Remove Selected', command = delete)
 delButt.grid(row=5,column = 3)
