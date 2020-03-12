@@ -74,7 +74,7 @@ items = [{'1':'0.75','2':'1.50','3':'2.25'},{'1':'0.75','2':'1.50','3':'2.25'},{
 #canvas
 canvas = Canvas(root, height=600, width=600, bg='white')
 canvas.grid(row=7, column=0,columnspan=3)
-
+canvas.create_polygon(350,400,300,600,250,400,fill='yellow')
 
 #other misc items
 delButt = Button(text = 'Remove Selected', command = delete)
