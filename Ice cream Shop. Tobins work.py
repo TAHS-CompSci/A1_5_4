@@ -3,7 +3,7 @@ from tkinter import *
 from tkinter import messagebox
 from tkinter.ttk import *
 root = tk.Tk()
-photo = PhotoImage(file = r"C:\Users\th3340\Documents\GitHub\A1_5_4\IceCreamCone_StrawBerry.bmp")
+photo = PhotoImage(file = r"C:/Users/th3340/Documents/GitHub/A1_5_4/IceCreamCone_StrawBerry.bmp")
 button = Button(root, text='click me.', image = photo).pack(side = TOP)
 button.grid(row=0, column=0)
 # creates the canvas 
