@@ -72,7 +72,7 @@ items = [{'1':'0.75','2':'1.50','3':'2.25'},{'1':'0.75','2':'1.50','3':'2.25'},{
 
 
 #canvas
-canvas = Canvas(root, height=600, width=600, bg='red')
+canvas = Canvas(root, height=600, width=600, bg='white')
 canvas.grid(row=7, column=0,columnspan=3)
 
 
